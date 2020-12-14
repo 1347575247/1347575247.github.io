@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物网站</title>
+	 <!-- 引入的  初识化css   fullpage css -->
+	 <link rel="stylesheet" href="css/base.css" />
+	 <!-- 引入自己的css  -->
+   <link rel="stylesheet" href="css/mypage.css" />
+   <link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="css/jquery.fullPage.css" />
+	 <!-- 这是一个jquery插件，所以先引入jquery -->
+	 <script src="js/jquery.min.js"></script>
+	  <!-- 如果想要 easing 缓动动画  那就引入 easing js -->
+	 <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/jquery.fullPage.min.js"></script>
+	 <!-- 引入自己的js -->
+   <script src="js/myPage.js"></script>
+   
+   
+</head>
+<body>
+
+<!-- 背景音乐 -->
+<audio id="backgroundAudio" autoplay loop src="./media/backg.mp3"></audio>
+<!-- 点击音乐 -->
+<audio id="clickAudio" src="./media/click.mp3"></audio>
+<!-- 烟花音效 -->
+<audio id="fireAudio" src="./media/fire.mp3"></audio>
+ <!-- 直接进入查看深圳历史 -->
+<a href="./html/historyCatgory.html" class="go">
+	<img class="history-btn" src="images/点击查看.png" alt="">
+</a>
+<!-- next 下一屏幕 -->
+<a href="javascript:;">
+  <img src="images/next.png"  class="next next_undown" alt="">
+</a>
+<div id="fullpage">
+    <!-- 第一屏幕制作 -->
+       <div class="section section1">
+           <img src="images/深圳特区.png" class="fly updown" alt="">
+           <img src="images/华为.png" class="shirt01 shirt-updown" alt="">
+           <img src="images/图标.png" class="goods" alt="">
+       </div>
+      <!-- 第二屏幕制作 -->
+       <div class="section section2">
+           <div class="computer">
+               <div class="search move">
+                   <img src="images/40周年庆蛋糕2.jpg" class="search-wrods" alt="">
+               </div>
+               <img src="images/40周年庆蛋糕.jpg"  class="search-02-1" alt="">
+               <img src="images/搜索结果.png"  class="goods-02" alt="">
+               <!-- 沙发 -->
+               <img src="images/正蛋糕.png" class="shirt-02" alt="">
+               <!-- 白色底盒子用来遮挡沙发的 -->
+               <div class="cover move"></div>
+           </div>
+           <img src="images/words-01-361-25.png" class="words-01" alt="">
+           <img src="images/words-02.png"  class="words-02" alt="">
+       </div>
+       
+       <!-- 第三屏幕制作 -->
+       
+       <div class="section section3">
+           <div class="main">
+               <div class="select">
+                   <img src="images/img-01.gif" class="img" alt="">
+                   <img src="images/img-01-a.gif" class="img img-01-a" alt="">
+                   <img src="images/btn-01.gif" class="btn" alt="">
+                   <img src="images/btn-01-a.gif" class="btn btn-01-a" alt="">
+               </div>
+               <img src="images/正蛋糕.png" class="shirt-03" alt="">
+               <img src="images/歪蛋糕.png" class="t1f"  alt="">
+           </div>
+       </div>
+    
+        <!-- 第四屏幕制作 -->
+    
+    <div class="section section4">
+          <img src="images/cloud.png"  class="cloud cloud-back1">
+          <img src="images/words-04.png" class="word">
+          <img src="images/words-04-a.png" class="word words-04-a">
+          <div class="car move"> <!-- 购物车 -->
+              <img src="images/歪蛋糕.png" class="car-img" alt="">
+              <img src="images/car.png" alt="">
+      
+          </div>
+          <div class="note move">
+                <img src="images/深圳市及深圳.jpg"  class="note-img" alt="">  
+               <img src="images/t1.png"  alt="">
+          </div>
+    </div>
+    <!-- 第五屏幕制作 -->
+    <div class="section section5">
+        <img src="images/动动手指.png" class="words-05">
+        <img src="images/card-05.png" class="card-05">
+        <img src="images/order-05.png" class="order-05">
+        <img src="images/歪蛋糕.png" class="t1f-05">
+        <div class="overFlow">
+          <img src="images/mouse-05.png" class="mouse">
+          <img src="images/mouse-05-a.png" class="mouse mouse-05-a">
+          <img src="images/hand-05.png" class="hand-05">
+        </div>
+        
+    </div>
+     <!-- 第6屏幕制作 -->
+    <div class="section section6">
+        <img src="images/box.png" alt="" class="box-06" />
+        <img src="images/car-06.png" alt="" class="car-06" />
+        <img src="images/cloud-06.png" alt="" class="cloud-06" />
+        <img src="images/深圳市.png" alt="" class="pop-06" />
+        <img src="images/man1.png" alt="" class="boy">
+        <img src="images/women.png" alt="" class="girl">
+        <img src="images/door.png" alt="" class="door">
+        <img src="images/生日快乐.png" alt="" class="pop-07">
+        <img src="images/words-06-a.png" alt="" class="words-06-a">
+    
+    </div>
+     <!-- 第7屏幕制作 -->
+    <div class="section section7">
+      <div class="star move">
+        
+      </div>
+      <img src="images/good-07.png" alt="" class="good-07">
+    </div>
+    <!-- 第8屏幕制作 -->
+    <div class="section section8">
+        <a href="#" class="beginShoping">
+          <img src="images/点击庆祝.png" alt="">
+          <img src="images/btn-08-b.gif" alt="" class="btn-08-a">
+        </a>
+        
+        
+        <img src="images/again.png"  class="again" alt="">
+        <img src="images/hand-08.png"  class="hand-08">
+    </div>   
+    <div id="canvas-container"></div>
+
+</div>
+<script src='js/dat.gui.min.js'></script>
+<script src="js/prefixfree.min.js"></script>
+<!-- 这个是生成烟花的JS文件 -->
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding:0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+#pic{
+	height:250px;
+	margin:150px auto;
+	-webkit-transform-style:preserve-3d;
+	-webkit-perspective:800px; 
+	position:relative;
+}
+#pic img{
+	width:300px;
+	height:250px;
+	cursor:pointer;
+	-webkit-transition:0.8s;
+	position:absolute; 
+	-webkit-box-reflect:below 0 -webkit-linear-gradient(top,rgba(0,0,0,0.1),rgba(0,0,0,0.5));
+}
+#pic img.now{
+	transform:translateZ(100px);
+}
+#pic img.front{
+	transform:rotateY(45deg) translateZ(-100px);
+}
+#pic img.back{
+	transform:rotateY(-45deg) translateZ(-100px);
+}
+#canvas{
+  position: absolute;
+  z-index: -2;
+}
